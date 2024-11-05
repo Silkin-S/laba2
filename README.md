@@ -101,7 +101,7 @@
 import java.io.PrintStream;
 import java.util.Scanner;
 
-public class Main {
+public class Main1 {
     // Объявляем объект класса Scanner для ввода данных
     public static Scanner in = new Scanner(System.in);
     // Объявляем объект класса PrintStream для вывода данных

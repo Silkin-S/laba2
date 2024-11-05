@@ -12,7 +12,7 @@ public class Main {
         int M = in.nextInt();
         in.nextLine(); // Очистка буфера после nextInt()
 
-
+        // Создание массива
         String[][] dates = new String[N][M];
 
         // Считываем элементы массива
@@ -22,7 +22,6 @@ public class Main {
                 dates[i][j] = in.nextLine();
             }
         }
-
 
         // Сортировка пузырьком
         for (int i = 0; i < N; i++) {
@@ -62,7 +61,7 @@ public class Main {
             }
         }
 
-        // Инициализация переменных для самой ранней и самой поздней даты
+        // Создание переменных для самой ранней и самой поздней даты
         String mindate = dates[0][0];
         String maxdate = dates[0][M - 1];
 
@@ -104,12 +103,13 @@ public class Main {
             }
         }
 
+        out.println(); // для красоты
+
         // Вывод самой ранней и самой поздней даты
-        out.println();
         out.println("Самая ранняя дата: " + mindate);
         out.println("Самая поздняя дата: " + maxdate);
 
-        out.println();
+        out.println(); // для красоты
 
         // Вывод элементов массива, в виде "yyyy-MMdd".
         out.println("Элементы массива, в виде yyyy-MMdd");
@@ -120,10 +120,10 @@ public class Main {
             }
         }
 
-        out.println();
-        out.println();
+        out.println(); // для красоты
+        out.println(); // для красоты
 
-        // Добавление к каждой дате одного дня и вывод обновлённого массива
+        // Добавление к каждой дате одного дня
         out.println("Отсортированный массив с добавленным одним днем:");
         for (int i = 0; i < N; i++) {
             for (int j = 0; j < M; j++) {
@@ -159,16 +159,20 @@ public class Main {
                     }
                 }
 
-                // Форматируем дату обратно в строку
+                // Возвращаем дату обратно в строку
                 dates[i][j] = day + "." + month + "." + year + " " + dates[i][j].substring(11);
 
             }
         }
+
+        // Выводим отсортированный массив с добавленным одним днем
         for (int i = 0; i < N; i++) {
             out.println();
             for (int j = 0; j < M; j++) {
                 out.print(dates[i][j] + " ");
             }
         }
+        out.println(); // для красоты
+        out.println(); // для красоты
     }
 }
