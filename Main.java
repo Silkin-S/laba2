@@ -172,7 +172,9 @@ public class Main {
                 out.print(dates[i][j] + " ");
             }
         }
+
         out.println(); // для красоты
         out.println(); // для красоты
+
     }
 }
