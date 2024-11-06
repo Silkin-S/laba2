@@ -112,7 +112,7 @@ public class Main {
         out.println();
 
         // Вывод элементов массива, в виде "yyyy-MMdd".
-        out.println("Элементы массива, в виде yyyy-MMdd");
+        out.println("Элементы отсортированного массива, в виде yyyy-MMdd");
         for (int i = 0; i < N; i++) {
             out.println();
             for (int j = 0; j < M; j++) {
@@ -170,6 +170,10 @@ public class Main {
                 out.print(dates[i][j] + " ");
             }
         }
+
+        out.println(); // для красоты
+        out.println(); // для красоты
+
     }
 }
 
